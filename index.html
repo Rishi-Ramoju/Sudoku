@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon" /> -->
+    <meta
+      name="description"
+      content="Play Sudoku online or learn how to solve it."
+    />
+    <meta name="keywords" content="Sudoku, puzzle, game, online, play, learn" />
+    <meta name="author" content="Your Name" />
+    <meta property="og:title" content="Sudoku Game" />
+    <meta
+      property="og:description"
+      content="Play Sudoku online or learn how to solve it."
+    />
+    <meta property="og:image" content="sudoku-thumbnail.png" />
+    <meta property="og:url" content="https://yourwebsite.com/sudoku.html" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sudoku.html">Sudoku</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Welcome to Sudoku</h1>
+      <p class="welcome-text">Play Sudoku online or learn how to solve it.</p>
+      <section class="game-section">
+        <h2>Play Sudoku</h2>
+        <p class="start-game-text">
+          Click the button below to start a new game.
+        </p>
+        <div class="container">
+          <div id="sudoku"></div>
+          <div class="keypad">
+            <div class="keypad-row keypad-actions">
+              <div class="timer">
+                <div>Time:</div>
+                <div id="time">00:00</div>
+              </div>
+              <button class="action-btn" id="reset-btn">Reset</button>
+              <button class="action-btn" id="delete-btn">Delete</button>
+              <button class="pause-play">▶</button>
+            </div>
+            <div class="keypad-row">
+              <button class="keypad-button" data-number="1">1</button>
+              <button class="keypad-button" data-number="2">2</button>
+              <button class="keypad-button" data-number="3">3</button>
+            </div>
+            <div class="keypad-row">
+              <button class="keypad-button" data-number="4">4</button>
+              <button class="keypad-button" data-number="5">5</button>
+              <button class="keypad-button" data-number="6">6</button>
+            </div>
+            <div class="keypad-row">
+              <button class="keypad-button" data-number="7">7</button>
+              <button class="keypad-button" data-number="8">8</button>
+              <button class="keypad-button" data-number="9">9</button>
+            </div>
+
+            <div class="keypad-row">
+              <button class="keypad-button new-game-btn">New Game</button>
+            </div>
+          </div>
+        </div>
+        <!-- <button id="start-game">Start Game</button> -->
+      </section>
+      <section class="instructions-section">
+        <h2>How to Play</h2>
+        <p class="instructions-text">
+          Fill in the grid so that each column, each row, and each of the nine
+          3×3 subgrids that compose the grid contain all of the digits from 1 to
+          9.
+        </p>
+      </section>
+    </main>
+    <script type="module" src="js/main.js"></script>
+    <!-- <script src="index.js"></script> -->
+  </body>
+</html>
